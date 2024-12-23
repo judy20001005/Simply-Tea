@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <!-- 響應式網站 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simply Tea</title>
+
+    <!-- 連結css -->
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/menu.css">
+     
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- AOS -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+    <!-- Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+<body>
+    <div class="outerWrap">
+        <header id="menu" class="header">
+            <div class="wrap">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo1.png">
+                    </a>
+                </div>
+                <nav class="menuBox">
+                    <ul class="menu">
+                        <li itemprop="name" class="menu-item"><a itemprop="url" href="about.html">關於我們<br><span>about</span></a></li>
+                        <li itemprop="name" class="menu-item"><a itemprop="url" href="news.html">最新消息<br><span>news</span></a></li>
+                        <li itemprop="name" class="menu-item"><a itemprop="url" href="menu.html">菜單<br><span>menu</span></a></li>
+                        <li itemprop="name" class="menu-item"><a itemprop="url" href="careers.html">夥伴招募<br><span>careers</span></a></li>
+                        <li itemprop="name" class="menu-item"><a itemprop="url" href="contact.html">聯絡我們<br><span>contact</span></a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger" id="toggle" >
+                    <i class="fa fa-bars fa-2x" onclick="ChangeIcon(this)"></i>
+                </div>
+            </div>
+        </header>
+
+        <div class="top">
+            <div class="top-images" style="background-image: url(img/2.png);">
+                <span class="top-title">menu</span>
+                <span class="top-subtitle">菜單</span>
+            </div>
+        </div>
+
+        <div class="mainArea">
+            <div class="wrap">
+                <div class="contentbox">
+                    <div class="classbox">
+                        <ul class="classlink">
+                            <li class="tab active" data-category="coffee">咖啡飲品</li>
+                            <li class="tab" data-category="juice">果汁</li>
+                            <li class="tab" data-category="cake">蛋糕</li>
+                        </ul>
+                    </div>
+                    <div class="menulist">
+                        <div class="classnote itemlist active" id="coffee">
+                            <div class="txt_title">
+                                <span>Coffee Drinks</span>
+                                咖啡飲品
+                            </div>
+                            <div class="txt">
+                                <span>單點飲料加點蛋糕，享有50元折扣</span>
+                                <br>
+                                <span>Upgrade to Cakes Get Discount NT$50 off</span>
+                            </div>
+                        </div>
+                        <div class="classnote itemlist" id="juice">
+                            <div class="txt_title">
+                                <span>Fresh Juice</span>
+                                現榨果汁
+                            </div>
+                            <div class="txt">
+                                <span>單點飲料加點蛋糕，享有50元折扣</span>
+                                <br>
+                                <span>Upgrade to Cakes Get Discount NT$50 off</span>
+                            </div>
+                        </div>
+                        <div class="classnote itemlist" id="cake">
+                            <div class="txt_title">
+                                <span>Handmade Cake</span>
+                                手作甜點
+                            </div>
+                            <div class="txt">
+                                <span>單點飲料加點蛋糕，享有50元折扣</span>
+                                <br>
+                                <span>Upgrade to Cakes Get Discount NT$50 off</span>
+                            </div>
+                        </div>
+                        <div class="menuitem">
+                            <ul class="itemlist active" id="coffee">
+                                <li>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="img/coffee1.png">
+                                        </div>
+                                        <div class="txt">
+                                            <h3>卡布奇諾</h3>
+                                            <strong>Cappuccino</strong>
+                                            <div class="txtexp"></div>
+                                            <div class="price">NT. 180</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="img/coffee2.png">
+                                        </div>
+                                        <div class="txt">
+                                            <h3>冰咖啡</h3>
+                                            <strong>Ice Coffee</strong>
+                                            <div class="txtexp"></div>
+                                            <div class="price">NT. 160</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="img/coffee3.png">
+                                        </div>
+                                        <div class="txt">
+                                            <h3>焦糖瑪奇朵</h3>
+                                            <strong>Caramel Macchiato</strong>
+                                            <div class="txtexp"></div>
+                                            <div class="price">NT. 200</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="img/coffee4.png">
+                                        </div>
+                                        <div class="txt">
+                                            <h3>拿鐵咖啡</h3>
+                                            <strong>Latte</strong>
+                                            <div class="txtexp"></div>
+                                            <div class="price">NT. 180</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="img/coffee5.png">
+                                        </div>
+                                        <div class="txt">
+                                            <h3>美式咖啡</h3>
+                                            <strong>Americano</strong>
+                                            <div class="txtexp"></div>
+                                            <div class="price">NT. 150</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="itemlist" id="juice">
+                                <li>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="img/juice.png">
+                                        </div>
+                                        <div class="txt">
+                                            <h3>檸檬汁</h3>
+                                            <strong>Lemon Juice</strong>
+                                            <div class="txtexp"></div>
+                                            <div class="price">NT. 180</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="img/juice.png">
+                                        </div>
+                                        <div class="txt">
+                                            <h3>100% 柳橙汁</h3>
+                                            <strong>Freshly Orange Juice</strong>
+                                            <div class="txtexp"></div>
+                                            <div class="price">NT. 220</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="img/juice.png">
+                                        </div>
+                                        <div class="txt">
+                                            <h3>鳳梨汁</h3>
+                                            <strong>Pineapple Juice</strong>
+                                            <div class="txtexp"></div>
+                                            <div class="price">NT. 200</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="img/juice.png">
+                                        </div>
+                                        <div class="txt">
+                                            <h3>西瓜汁</h3>
+                                            <strong>Watermelon Juice</strong>
+                                            <div class="txtexp"></div>
+                                            <div class="price">NT. 180</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="itemlist" id="cake">
+                                <li>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="img/cake1.png">
+                                        </div>
+                                        <div class="txt">
+                                            <h3>草莓蛋糕</h3>
+                                            <strong>Strawberry Cake</strong>
+                                            <div class="txtexp">
+                                                每日限量
+                                                <br>                                                
+                                                單點飲品搭蛋糕享折抵NT.50
+                                            </div>
+                                            <div class="price">NT. 180</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="img/cake2.png">
+                                        </div>
+                                        <div class="txt">
+                                            <h3>提拉米蘇</h3>
+                                            <strong>Tiramisu</strong>
+                                            <div class="txtexp">
+                                                每日限量
+                                                <br>                                                
+                                                單點飲品搭蛋糕享折抵NT.50</div>
+                                            <div class="price">NT. 180</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="img/cake3.png">
+                                        </div>
+                                        <div class="txt">
+                                            <h3>巧克力蛋糕</h3>
+                                            <strong>Chocolate Cake</strong>
+                                            <div class="txtexp">
+                                                每日限量
+                                                <br>                                                
+                                                單點飲品搭蛋糕享折抵NT.50
+                                            </div>
+                                            <div class="price">NT. 160</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="img/cake4.png">
+                                        </div>
+                                        <div class="txt">
+                                            <h3>藍莓蛋糕</h3>
+                                            <strong>Blueberry Cake</strong>
+                                            <div class="txtexp">
+                                                每日限量
+                                                <br>                                                
+                                                單點飲品搭蛋糕享折抵NT.50
+                                            </div>
+                                            <div class="price">NT. 180</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+      
+    <footer class="footer">
+        <div class="wrap">
+            <div class="downlogo">
+                <a href="index.html">
+                    <img src="img/logo1.png" alt="">
+                </a>
+            </div>
+            <div class="bottom">©Simply Tea</div>
+        </div>
+        <div class="scroll-top">
+            <a href="#"><i class="fa-solid fa-circle-chevron-up"></i></a>
+        </div>
+    </footer>
+    
+
+
+     
+     <script>
+       AOS.init();
+     </script>
+
+    <!-- Swiper's JS -->          
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
+
+</body>
+</html>

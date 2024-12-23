@@ -1,0 +1,44 @@
+.about{
+    background: #2c3236;
+    color: #bdc3c7;
+    position: relative;
+    padding: 85px 50px 60px;
+    z-index: 1;
+    margin-top: 50px;
+    font-size: 15px;
+}
+.about .title{
+    font-size: 22px;
+    color: #9d8a66;
+    margin-bottom: 20px;
+}
+.about .txt{
+    display: flex;
+}
+.about .txt .left{
+    width: 50%;
+    padding-right: 50px;
+    line-height: 2;
+}
+
+.about .txt .right{
+    width: 50%;
+}
+.about .txt .right img{
+    width: 100%;
+}
+
+@media screen and (max-width:980px){
+    .about .txt{
+        display: block;
+    }
+    .about .txt .left{
+        width: 100%;
+        padding-right: 50px;
+        line-height: 2;
+        margin-bottom: 30px;
+    }
+    .about .txt .right{
+        width: 100%;
+    }
+} 

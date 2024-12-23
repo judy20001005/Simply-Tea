@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <!-- 響應式網站 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simply Tea</title>
+
+    <!-- 連結css -->
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/about.css">
+     
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- AOS -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+    <!-- Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+</head>
+<body>
+    <div class="outerWrap">
+        <header id="menu" class="header">
+            <div class="wrap">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo1.png">  
+                    </a>
+                </div>
+                <nav class="menuBox">
+                    <ul class="menu">
+                        <li itemprop="name" class="menu-item"><a itemprop="url" href="about.html">關於我們<br><span>about</span></a></li>
+                        <li itemprop="name" class="menu-item"><a itemprop="url" href="news.html">最新消息<br><span>news</span></a></li>
+                        <li itemprop="name" class="menu-item"><a itemprop="url" href="menu.html">菜單<br><span>menu</span></a></li>
+                        <li itemprop="name" class="menu-item"><a itemprop="url" href="careers.html">夥伴招募<br><span>careers</span></a></li>
+                        <li itemprop="name" class="menu-item"><a itemprop="url" href="contact.html">聯絡我們<br><span>contact</span></a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger" id="toggle" >
+                    <i class="fa fa-bars fa-2x" onclick="ChangeIcon(this)"></i>
+                </div>
+            </div>
+        </header>
+
+        <div class="top">
+            <div class="top-images" style="background-image: url(img/2.png);">
+                <span class="top-title">about</span>
+                <span class="top-subtitle">關於我們</span>
+            </div>
+        </div>
+
+        <div class="mainArea">
+            <div class="wrap">
+                <div class="about">
+                    <div class="title">關於我們</div>
+                    <div class="txt">
+                        <div class="left">
+                            <span>我們的故事始於一个小小的廚房，一个充滿笑聲、温馨和甜蜜的地方。我們相信，每一塊糕點都承載着一个獨特的故事，傳遞着幸福與分享的美好瞬间。因此，我們甄選最優質的食材，用心制作每一款產品，确保每一口都充滿自然的味道和家的温度。</span>
+                            <br>
+                            <br>
+                            <span>在這裡，我們堅持用簡單而純粹的方式，帶給您不凡的美味體驗。無論是清晨的一杯咖啡伴随的鬆軟面包，還是午后陽光下的一片精致蛋糕，我們希望我們的每一件作品都能為您的日常增添一抹温暖與甜蜜。</span>
+                        </div>
+                        <div class="right">
+                            <img src="img/about.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+      
+    <footer class="footer">
+        <div class="wrap">
+            <div class="downlogo">
+                <a href="index.html">
+                    <img src="img/logo1.png" alt="">
+                </a>
+            </div>
+            <div class="bottom">©Simply Tea</div>
+        </div>
+        <div class="scroll-top">
+            <a href="#"><i class="fa-solid fa-circle-chevron-up"></i></a>
+        </div>
+    </footer>
+    
+
+
+     
+     <script>
+       AOS.init();
+     </script>
+
+    <!-- Swiper's JS -->          
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

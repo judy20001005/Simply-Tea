@@ -1,0 +1,48 @@
+.careers {
+    background: #2c3236;
+    color: #bdc3c7;
+    position: relative;
+    padding: 85px 50px 60px;
+    z-index: 1;
+    margin-top: 50px;
+    font-size: 15px;
+}
+.careers .title{
+    font-size: 22px;
+    color: #9d8a66;
+    margin-bottom: 20px;
+}
+.careers .txt{
+    display: flex;
+}
+.careers .txt .left{
+    width: 50%;
+    padding-right: 50px;
+    line-height: 2;
+}
+.careers .txt .left span{
+    color: #ab894c;
+    font-size: 22px;
+}
+
+.careers .txt .right{
+    width: 50%;
+}
+.careers .txt .right img{
+    width: 100%;
+}
+
+@media screen and (max-width:980px){
+    .careers .txt{
+        display: block;
+    }
+    .careers .txt .left{
+        width: 100%;
+        padding-right: 50px;
+        line-height: 2;
+        margin-bottom: 30px;
+    }
+    .careers .txt .right{
+        width: 100%;
+    }
+} 

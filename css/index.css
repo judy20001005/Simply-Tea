@@ -1,0 +1,536 @@
+
+.outerWrap{
+    overflow: hidden;
+    position: relative;
+}
+header{
+    top: -140px;
+}
+/* 固定 Logo */
+.banner-logo {
+    width: 168px;
+    position: absolute;
+    margin: 0;
+    top: 40px; /* 距離視窗頂部 40px */
+    left: calc(50% - 84px);
+    z-index: 10; /* 保證在 Swiper 上方 */
+  }
+  .banner-logo img {
+    width: 100%;
+  }
+
+  .banner-txt {
+    display: inline-block;
+    font-weight: 400;
+    letter-spacing: 7px;
+  }
+  .animated-text .btn {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .animated-text .btn a {
+    background-color: #c18e42;
+    color: #39301c;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    width: 180px;
+    height: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .animated-text .btn a::before{
+    content: '';
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    top: 4px;
+    left: 4px;
+    border: 1px solid #62512c;
+    position: absolute;
+  }
+/* Swiper 基本樣式 */
+.swiper-1 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .swiper-slide {
+    position: relative;
+    height: 100%;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100vh;
+  }
+  /* 文字動畫樣式 */
+  .animated-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color: #c18e42;
+    font-size: 19px;
+    opacity: 0;
+    transform: translate(-50%, -62%);
+    transition: opacity 3s ease, transform 3s ease;
+  }
+  .swiper-slide-active .animated-text {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+
+  .mainArea {
+    padding: 0;
+    position: relative;
+    background: #000;
+  }
+  .newsArea {
+    padding: 170px 0 200px;
+    height: 600px;
+  }
+  .newsArea .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .newsArea .leftbox {
+    width: 50%;
+    position: relative;
+    z-index: 1;
+  }
+  .newsArea .leftbox .coffee {
+    width: 600px;
+    height: 600px;
+    background: url(../img/coffee-beans.png) no-repeat;
+    position: absolute;
+    top: 0px;
+    left: calc(50% + 125px);
+    z-index: -1;
+  }
+  .newsArea .leftbox .circle {
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    background: #c18e42;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  .newsArea .leftbox .teacup {
+    width: 1000px;
+    height: 1000px;
+    background: url(../img/coffee.png) no-repeat;
+    background-size: 60%;
+    position: absolute;
+    top: 130px;
+    left: -100px;
+    z-index: -1;
+  }
+  .newsArea .leftbox .titlebox {
+    width: 245px;
+    position: absolute;
+    top: 160px;
+    left: 360px;
+  }
+  .newsArea .leftbox .titlebox span {
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #2d2519;
+  }
+  .newsArea .leftbox .titlebox h2 {
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    color: #2d2519;
+    text-align: right;
+  }
+  .newsArea .leftbox .titlebox h2::before {
+    content: '';
+    width: 50%;
+    height: 1px;
+    background: #2d2519;
+    position: absolute;
+    top: 82%;
+    left: 0;
+  }
+  .newsArea .rightbox {
+    width: 50%;
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    padding: 0;
+    z-index: 1;
+  }
+  .newsArea .item{
+    display: flex;
+  }
+  .newsArea .txt {
+    width: 50%;
+    margin-right: 30px;
+    padding-bottom: 0;
+    padding-right: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background-color: #2c3236;
+  }
+  .newsArea .txt::after{
+    content: '';
+    width: calc(100% - 18px);
+    height: calc(100% - 18px);
+    top: 8px;
+    left: 8px;
+    border: 1px solid #3d464c;
+    position: absolute;
+  }
+  .newsArea .inner_txt {
+    width: 220px;
+    padding-bottom: 55px;
+  }
+  .newsArea .date {
+    color: #c5a467;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  .newsArea .date .mm {
+    font-size: 30px;
+    letter-spacing: 0.2px;
+    display: block;
+    position: relative;
+  }
+  .newsArea .date .mm::before {
+    content: '';
+    width: 1px;
+    height: 20px;
+    background: #c5a467;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 40px;
+    transform: rotate(15deg);
+  }
+  .newsArea .date .dd {
+    font-size: 56px;
+    letter-spacing: 0.2px;
+  }
+  .newsArea .date .yy {
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding-left: 5px;
+  }
+  .newsArea .txt h3 {
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 26px;
+    letter-spacing: 1.5px;
+    max-height: 55px;
+    margin-bottom: 35px;
+  }
+  .newsArea .txt h3 a {
+    color: #c5a467;
+  }
+  .newsArea .img {
+    width: 50%;
+    padding-left: 15px;
+    position: relative;
+    overflow: hidden;
+  }
+  .newsArea .img img {
+    width: 100%;
+    height: auto;
+  }
+  .btnmore {
+    position: relative;
+    z-index: 1;
+  }
+  .btnmore a {
+    font-weight: 100;
+    color: #c5a467;
+  }
+  a {
+    cursor: pointer;
+  }
+  .btnmore a::before {
+    content: '';
+    width: 36px;
+    height: 1px;
+    background: #5a5345;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transition: all 0.4s ease;
+  }
+  .btnmore:hover a::before {
+    content: '';
+    width: 36px;
+    height: 1px;
+    background: #5a5345;
+    left: -1%;
+  }
+
+  .swiper-2{
+    position: relative;
+  }
+  .swiper-2 .swiper-wrapper {
+    margin-bottom: 50px;
+  }
+  .swiper-2 .swiper-pagination-bullet {
+    background: #c5a467;
+  }
+
+  .drinkArea{
+    width: 100%;
+  }
+  .drinkArea .txt{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+    background: #c5a467;
+  }
+  .drinkArea .txt .titlebox{
+    text-align: right;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  .drinkArea .txt .titlebox .t1{
+    font-size: 46px;
+    line-height: 1;
+    display: block;
+  }
+  .drinkArea .txt .titlebox .t2{
+    font-size: 36px;
+    line-height: 1;
+    position: relative;
+  }
+  .drinkArea .txt .titlebox .t2::before {
+    content: '';
+    width: 1px;
+    height: 30px;
+    background: #2d2519;
+    position: absolute;
+    top: calc(50% - 15px);
+    left: -10px;
+    transform: rotate(20deg);
+  }
+  .drinkArea .txt .titlebox h2{
+    font-size: 22px;
+    line-height: 0.2;
+    position: relative;
+    font-weight: normal;
+  }
+  .drinkArea .txt .right{
+    color: #151719;
+    width: 50%;
+    padding: 0px 65px 0px 45px;
+    border-left: 1px solid #867349;
+  }
+  .drinkArea .txt .right span{
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 1.7px;
+  }
+  .drinkArea .txt .right strong {
+    display: block;
+  }
+  .drinkArea .txt .right .txtExp {
+    margin-top: 10px;
+    line-height: 2;
+  }
+  .drinkArea .img {
+    width: 50%;
+  }
+  .drinkArea img {
+    width: 100%;
+    height: auto;
+  }
+  .swiper-3 {
+    position: relative;
+  }
+  .swiper-3 .swiper-slide{
+    display: flex;
+  }
+  .swiper-3 .swiper-button-prev{
+    position: absolute;
+    margin-left: 450px;
+    margin-top: 100px;
+  }
+  .swiper-3 .swiper-button-prev::after{
+    content: '\f137';
+    font: var(--fa-font-solid);
+    color: #2c3236;
+    font-size: 40px;
+  }
+  .swiper-3 .swiper-button-next{
+    position: absolute;
+    margin-right: 650px;
+    margin-top: 100px;
+  }
+  .swiper-3 .swiper-button-next::after{
+    content: '\f138';
+    font: var(--fa-font-solid);
+    color: #2c3236;
+    font-size: 40px;
+  }
+
+@media screen and (max-width:1024px){
+  .swiper-slide img {
+    width: auto;
+    height: 100vh;
+  }
+  .newsArea {
+    padding: 70px 0;
+    height: auto;
+  }
+  .newsArea .leftbox {
+    width: 100%;
+    text-align: center;
+  }
+  .newsArea .leftbox .coffee {
+    display: none;
+  }
+  .newsArea .leftbox .circle {
+    display: none;
+  }
+  .newsArea .leftbox .teacup {
+    display: none;
+  }
+  .newsArea .leftbox .titlebox {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0px;
+  }
+  .newsArea .leftbox .titlebox span {
+    font-size: 36px;
+    line-height: 0;
+    color: #e2c286;
+  }
+  .newsArea .leftbox .titlebox h2 {
+    font-size: 22px;
+    line-height: 0;
+    color: #e2c286;
+    text-align: center;
+  }
+  .newsArea .leftbox .titlebox h2::before {
+    width: 0;
+  }
+
+  .newsArea .rightbox {
+    width: 100%;
+    position: relative;
+    top: 50px;
+    right: 0;
+  }
+  .newsArea .item{
+    display: flex;
+  }
+  .newsArea .txt {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: left;
+  }
+  .newsArea .inner_txt {
+    width: 220px;
+    padding: 30px;
+  }
+  .newsArea .date .mm {
+    display: inline-block;
+  }
+  .newsArea .date .dd {
+    font-size: 30px;
+    padding-left: 16px;
+  }
+
+  .newsArea .img {
+    width: 100%;
+    padding: 0;
+  }
+
+  .drinkArea .wrap {
+    padding: 0 150px;
+  }
+  .drinkArea .wrap .txt{
+    width: 100%;
+    display: block;
+    padding: 45px 0;
+  }
+  .drinkArea .txt .titlebox{
+    text-align: center;
+    padding: 0;
+  }
+  .drinkArea .txt .titlebox .t1{
+    display: inline-block;
+    padding-right: 25px;
+  }
+  .drinkArea .txt .titlebox .t2{
+    font-size: 46px;
+    padding-left: 15px;
+  }
+
+  .drinkArea .txt .right{
+    width: 100%;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .drinkArea .txt .right .txtExp {
+    margin-top: 10px;
+    line-height: 2;
+    padding: 0 20px;
+  }
+  .drinkArea .img {
+    width: 100%;
+  }
+  .drinkArea .img img{
+    width: 100%;
+    height: auto;
+  }
+
+  .swiper-3 .swiper-slide{
+    display: block;
+    position: relative;
+  }
+  .swiper-3 .swiper-button-prev{
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 120px;
+  }
+  .swiper-3 .swiper-button-next{
+    position: absolute;
+    margin-right: 0px;
+    margin-top: 120px;
+  }
+}
+
+@media screen and (max-width:980px){
+  .drinkArea .wrap {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width:640px){
+  .drinkArea .txt .titlebox .t1{
+    font-size: 36px;
+  }
+  .drinkArea .txt .titlebox .t2{
+    font-size: 36px;
+  }
+
+}

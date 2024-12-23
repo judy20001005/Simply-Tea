@@ -1,0 +1,198 @@
+.contentbox{
+    padding: 0;
+    position: relative;
+    z-index: 5;
+}
+.classbox{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.classlink{
+    display: flex;
+    padding: 5px 0;
+}
+
+.classlink li{
+    color: #e2c286;
+    padding: 0 10px;
+    position: relative;
+}
+.classlink li::before{
+    width: 100%;
+    content: attr(data-category);
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+.classlink li::after{
+    content: '\f0d7';
+    font: var(--fa-font-solid);
+    font-size: 12px;
+    color: #897249;
+    position: absolute;
+    top: -25px;
+    left: calc(50% - 5px);
+    opacity: 0;
+    transition: top 0.5s;
+}
+.classlink li:hover::after{
+    opacity: 1;
+}
+.classlink .active::after{
+    content: '\f0d7';
+    font: var(--fa-font-solid);
+    font-size: 12px;
+    color: #897249;
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 5px);
+    opacity: 1;
+}
+
+.contentbox .menulist{
+    background: #2c3236;
+    position: relative;
+    padding: 50px 0;
+}
+.contentbox .classnote{
+    margin-bottom: 30px;
+    color: #ab894c;
+    opacity: 0;
+}
+.contentbox .menulist .classnote.active{
+    opacity: 1;
+}
+.contentbox .menulist .classnote .txt_title{
+    font-size: 20px;
+    width: 100%;
+    padding-left: 50px;
+}
+.contentbox .menulist .classnote .txt{
+    padding:0 50px;
+}
+.contentbox .menulist .classnote .txt span{
+    position: relative;
+    padding-left: 20px;
+}
+.contentbox .menulist .classnote .txt span::before{
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #a4864a;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+}
+.contentbox .itemlist {
+    display: none;
+    position: relative;
+    width: 100%;
+}
+.contentbox .menuitem .itemlist::before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background: #373e43;
+    position: absolute;
+    top: 0;
+    left: 33.33%;
+}
+.contentbox .menuitem .itemlist::after {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background: #373e43;
+    position: absolute;
+    top: 0;
+    right: 33.33%;
+}
+.contentbox .menuitem{
+    margin: auto;
+    width: 90%;
+}
+.contentbox .itemlist.active {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+.contentbox .itemlist li {
+    width: 33.33%;
+    position: relative;
+}
+.contentbox .itemlist .item {
+    padding: 0 40px;
+    position: relative;
+    overflow: hidden;
+}
+.contentbox .itemlist .img{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.6s ease;
+}
+.contentbox .itemlist .item:hover .img {
+    opacity: 1;
+}
+.contentbox .itemlist img{
+    width: 100%;
+}
+.contentbox .itemlist li .txt{
+    color: #e2c286;
+    padding: 20px 0;
+    border-bottom: 1px solid #373e43;
+}
+.contentbox .itemlist li .txt h3{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 0;
+    letter-spacing: 1.5px;
+}
+.contentbox .itemlist li .txt strong{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: 0.2px;
+}
+.contentbox .itemlist li .txt .txtexp{
+    color: #9d8a66;
+    letter-spacing: 2px;
+    height: 65px;
+    margin-top: 10px;
+}
+.contentbox .itemlist li .txt .price{
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    margin-top: 15px;
+    text-align: right;
+}
+
+@media screen and (max-width:650px){
+    /* .contentbox .menulist .classnote{
+        margin: 30px;
+    } */
+    .contentbox .itemlist li {
+        width: 100%;
+    }
+    .contentbox .menuitem .itemlist::before {
+        content: '';
+        width: 0px;
+        height: 100%;
+        background: #373e43;
+        position: absolute;
+        top: 0;
+        left: 33.33%;
+    }
+    .contentbox .menuitem .itemlist::after {
+        content: '';
+        width: 0px;
+        height: 100%;
+        background: #373e43;
+        position: absolute;
+        top: 0;
+        right: 33.33%;
+    }
+} 
