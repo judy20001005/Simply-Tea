@@ -169,11 +169,12 @@
     margin-top: 15px;
     text-align: right;
 }
-
+@media screen and (max-width:1024px){
+    .contentbox .itemlist li .txt .txtexp{
+        height: 35px;
+    }
+}
 @media screen and (max-width:650px){
-    /* .contentbox .menulist .classnote{
-        margin: 30px;
-    } */
     .contentbox .itemlist li {
         width: 100%;
     }

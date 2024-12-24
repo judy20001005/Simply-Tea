@@ -199,6 +199,8 @@ header{
   .newsArea .inner_txt {
     width: 220px;
     padding-bottom: 55px;
+    display: flex;
+    flex-direction: column;
   }
   .newsArea .date {
     color: #c5a467;
@@ -364,7 +366,7 @@ header{
   }
   .swiper-3 .swiper-button-prev{
     position: absolute;
-    margin-left: 450px;
+    left: 500px;
     margin-top: 100px;
   }
   .swiper-3 .swiper-button-prev::after{
@@ -375,7 +377,7 @@ header{
   }
   .swiper-3 .swiper-button-next{
     position: absolute;
-    margin-right: 650px;
+    left: 550px;
     margin-top: 100px;
   }
   .swiper-3 .swiper-button-next::after{
@@ -443,12 +445,11 @@ header{
     padding: 0;
     position: absolute;
     bottom: 0;
-    display: flex;
-    justify-content: left;
+    display: block;
   }
   .newsArea .inner_txt {
-    width: 220px;
-    padding: 30px;
+    width: auto;
+    padding: 20px;
   }
   .newsArea .date .mm {
     display: inline-block;
@@ -456,6 +457,14 @@ header{
   .newsArea .date .dd {
     font-size: 30px;
     padding-left: 16px;
+  }
+  .newsArea .txt h3 {
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 26px;
+    letter-spacing: 1.5px;
+    display: block;
+    margin-bottom:20px;
   }
 
   .newsArea .img {
@@ -510,11 +519,13 @@ header{
   }
   .swiper-3 .swiper-button-prev{
     position: absolute;
-    margin-left: 0px;
+    left: auto;
+    margin-left: 10px;
     margin-top: 120px;
   }
   .swiper-3 .swiper-button-next{
     position: absolute;
+    left: auto;
     margin-right: 0px;
     margin-top: 120px;
   }
